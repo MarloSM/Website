@@ -1,8 +1,52 @@
+
+
+
 body {
   background-color: grey;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+section.normal {
+  width: inherit;
+  background-color: white;
 }
 
 h1 {
   color: black;
-  margin-left: 20px;
+  text-align: center;
+}
+
+p {
+  padding-top: .5%;
+  padding-left: .5%;
+  padding-right: .5%;
+  padding-bottom: .5%;
+}
+
+/* Section */
+
+
+
+/* Link */
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
 }
