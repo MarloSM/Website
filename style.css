@@ -1,52 +1,108 @@
+/* Header */
 
+/* Navigation */
 
+nav {
+  font-size: 150%;
+}
+
+nav p {
+}
+
+/* List */
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+
+#name {
+  float: right;
+}
+/*
+li a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}*/
+
+li a:hover {
+  background-color: inherit;
+}
+
+li a.navi:hover {
+    color: white;
+    background-color: grey;
+    text-decoration: none;
+}
+li a:active {
+    background-color: transparent;
+}
+
+/* Body */
 
 body {
+  margin: 0px;
+  padding: 0px;
   background-color: grey;
-  margin-left: 15%;
-  margin-right: 15%;
 }
 
-section.normal {
-  width: inherit;
-  background-color: white;
-}
+/* Images */
 
-h1 {
-  color: black;
-  text-align: center;
-}
-
-p {
-  padding-top: .5%;
-  padding-left: .5%;
-  padding-right: .5%;
-  padding-bottom: .5%;
+img {
+  width: 100%;
+  align-items: center;
 }
 
 /* Section */
 
 
+/* Division */
+
+div.normal {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-left: .5%;
+  padding-right: .5%;
+  padding-bottom: .2%;
+  background-color: white;
+}
 
 /* Link */
 
-a:link {
-    color: green;
+/*a:link {
+    color: black;
     background-color: transparent;
     text-decoration: none;
 }
 a:visited {
-    color: pink;
+    color: black;
     background-color: transparent;
     text-decoration: none;
 }
 a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
+    color: white;
+    background-color: grey;
+    text-decoration: none;
 }
 a:active {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
-}
+}*/
