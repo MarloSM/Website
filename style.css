@@ -1,3 +1,9 @@
+
+body, nav, ul, li, a, p, h1, h2, h3, h4, h5, h6, img, div {
+  margin: 0;
+  padding: 0;
+}
+
 /* Header */
 
 /* Navigation */
@@ -6,18 +12,13 @@ nav {
   font-size: 150%;
 }
 
-nav p {
-}
-
 /* List */
 
 ul {
-  margin: 0;
-  padding: 0;
   width: 100%;
   overflow: hidden;
   list-style-type: none;
-  background-color: #333333;
+  background-color: #0573A3;
 }
 
 li {
@@ -51,15 +52,13 @@ li a.navi:hover {
     background-color: grey;
     text-decoration: none;
 }
-li a:active {
+li a.navi:active {
     background-color: transparent;
 }
 
 /* Body */
 
 body {
-  margin: 0px;
-  padding: 0px;
   background-color: grey;
 }
 
@@ -67,7 +66,8 @@ body {
 
 img {
   width: 100%;
-  align-items: center;
+  top: 0;
+  vertical-align: bottom;
 }
 
 /* Section */
