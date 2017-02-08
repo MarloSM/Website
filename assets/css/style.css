@@ -1,0 +1,153 @@
+
+body, nav, ul, li, a, p, h1, h2, h3, h4, h5, h6, img, div {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+/* Navigation */
+
+nav {
+  font-size: 150%;
+}
+
+/* List */
+
+ul {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2%;
+  list-style-type: none;
+  background-color: #0573A3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: white;
+  padding: 12px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+#active {
+  background-color: #178CBE;
+}
+
+li.name {
+  float: right;
+  padding-left: .5%;
+  padding-right: .5%;
+  background-color: #046088;
+}
+
+li a:hover {
+  background-color: #045B81;
+  text-decoration: none;
+}
+
+li.name a:hover {
+  background-color: inherit;
+}
+
+/* Drop Down List */
+
+li ul {
+  font-size: 85%;
+  width: auto;
+  max-width: 150px;
+  display: none;
+  position: absolute;
+  background-color: #CCCCCC;
+  box-shadow: -2px 2px 8px 0px rgba(0,0,0,0.2);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+li ul li {
+  float: none;
+}
+
+li ul li a {
+  color: #303030;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+li ul li a:hover {
+  color: white;
+  background-color: #4E4E4E;
+}
+
+li.dropdown:hover ul{
+  display: inline;
+}
+
+/* Body */
+
+body {
+  background-color: #808080;
+}
+
+/* Images */
+
+img {
+  width: 100%;
+  top: 0;
+  vertical-align: bottom;
+}
+
+/* Section */
+
+
+/* Division */
+
+div {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 2%;
+  background-color: #F2F1F1;
+  border-radius: 2px;
+}
+
+div.intro {
+  font-size: 120%;
+  text-align: center;
+}
+
+div.intro h1 {
+  color: white;
+  padding: 1.5%;
+  background-color: #4E4E4E;
+}
+
+div.intro p {
+  padding: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+div.single {
+  padding-top: 1.75%;
+  padding-bottom: 1.75%;
+}
+
+div.single h1, h2, h3, h4, h5, h6 {
+  color: white;
+  padding: 0.5%;
+  overflow: hidden;
+  display: table;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: #4E4E4E;
+}
+
+div.single p {
+  padding: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
