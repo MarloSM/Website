@@ -51,20 +51,21 @@ li a:hover {
 }
 
 li.name a:hover {
-background-color: inherit;
+  background-color: inherit;
 }
 
 /* Drop Down List */
 
 li ul {
+  font-size: 85%;
   width: auto;
   max-width: 150px;
   display: none;
   position: absolute;
-  background-color: lightgrey;
+  background-color: #CCCCCC;
   box-shadow: -2px 2px 8px 0px rgba(0,0,0,0.2);
-  /*border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 8px;*/
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 li ul li {
@@ -72,13 +73,14 @@ li ul li {
 }
 
 li ul li a {
-  color: black;
+  color: #303030;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 li ul li a:hover {
-
+  color: white;
+  background-color: #4E4E4E;
 }
 
 li.dropdown:hover ul{
@@ -88,7 +90,7 @@ li.dropdown:hover ul{
 /* Body */
 
 body {
-  background-color: grey;
+  background-color: #808080;
 }
 
 /* Images */
@@ -105,17 +107,47 @@ img {
 /* Division */
 
 div {
+  margin-left: 20%;
+  margin-right: 20%;
   margin-bottom: 2%;
-  margin-left: 15%;
-  margin-right: 15%;
-  padding: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
-  background-color: #ECF9FF;
-  border-radius: 4px;
+  background-color: #F2F1F1;
+  border-radius: 2px;
 }
 
 div.intro {
-  padding: 2%;
+  font-size: 120%;
   text-align: center;
+}
+
+div.intro h1 {
+  color: white;
+  padding: 1.5%;
+  background-color: #4E4E4E;
+}
+
+div.intro p {
+  padding: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+div.single {
+  padding-top: 1.75%;
+  padding-bottom: 1.75%;
+}
+
+div.single h1, h2, h3, h4, h5, h6 {
+  color: white;
+  padding: 0.5%;
+  overflow: hidden;
+  display: table;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: #4E4E4E;
+}
+
+div.single p {
+  padding: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
