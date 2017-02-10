@@ -16,16 +16,45 @@ body, nav, ul, li, a, p, h1, h2, h3, h4, h5, h6, img, div {
   display: table;
 }
 
-[class*="col-"] {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Media */
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.navbtn {
+  margin: 0;
+  height: 51px;
+  display: block;
+  position: fixed;
+  float: left;
+  content: url("optionlogo.png");
+  background-color: #045B81;
+}
+
+.navbtn:hover + ul, ul:hover {
+  display: block;
+}
+
+li.name {
+  display: none;
+}
+
+li {
+  float: none;
+  width: 100%;
+}
+
+li.dropdown:hover ul{
+  display: inline;
+}
+
+ul {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   .col-m-1 {width: 8.33%;}
@@ -40,7 +69,34 @@ body, nav, ul, li, a, p, h1, h2, h3, h4, h5, h6, img, div {
   .col-m-10 {width: 83.33%;}
   .col-m-11 {width: 91.66%;}
   .col-m-12 {width: 100%;}
+  .left-m {float: left;}
+  .right-m {float: right;}
+  .none-m {float: none;}
+
+  .marg-m-1 {margin-left: 4.165%;margin-right: 4.165%;}
+  .marg-m-2 {margin-left: 8.33%;margin-right: 8.33%;}
+  .marg-m-3 {margin-left: 12.5%;margin-right: 12.5%;}
+  .marg-m-4 {margin-left: 16.66%;margin-right: 16.66%;}
+  .marg-m-5 {margin-left: 20.83%;margin-right: 20.83%;}
+  .marg-m-6 {margin-left: 25%;margin-right: 25%;}
+  .marg-m-7 {margin-left: 29.165%;margin-right: 29.165%;}
+  .marg-m-8 {margin-left: 33.33%;margin-right: 33.33%}
+  .marg-m-9 {margin-left: 37.5%;margin-right: 37.5%;}
+  .marg-m-10 {margin-left: 41.66%;margin-right: 41.66%}
+  .marg-m-11 {margin-left: 45.83%;margin-right: 45.83%;}
+  .marg-m-12 {margin-left: 50%;margin-right: 50%}
+
+
+  ul {
+    display: block;
+  }
+
+  .navbtn {
+    display: none;
+  }
+
 }
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
@@ -49,12 +105,42 @@ body, nav, ul, li, a, p, h1, h2, h3, h4, h5, h6, img, div {
   .col-4 {width: 33.33%;}
   .col-5 {width: 41.66%;}
   .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;min-width: 760px;}
+  .col-7 {width: 58.33%;min-width: 768px;}
   .col-8 {width: 66.66%;}
   .col-9 {width: 75%;}
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  .left {float: left;}
+  .right {float: right;}
+  .none {float: none;}
+
+  .marg-1 {margin-left: 4.165%;margin-right: 4.165%;}
+  .marg-2 {margin-left: 8.33%;margin-right: 8.33%;}
+  .marg-3 {margin-left: 12.5%;margin-right: 12.5%;}
+  .marg-4 {margin-left: 16.66%;margin-right: 16.66%;}
+  .marg-5 {margin-left: 20.83%;margin-right: 20.83%;}
+  .marg-6 {margin-left: 25%;margin-right: 25%;}
+  .marg-7 {margin-left: 29.165%;margin-right: 29.165%;}
+  .marg-8 {margin-left: 33.33%;margin-right: 33.33%}
+  .marg-9 {margin-left: 37.5%;margin-right: 37.5%;}
+  .marg-10 {margin-left: 41.66%;margin-right: 41.66%}
+  .marg-11 {margin-left: 45.83%;margin-right: 45.83%;}
+  .marg-12 {margin-left: 50%;margin-right: 50%}
+
+
+  li {
+    float: left;
+    width: auto;
+  }
+
+  li.name {
+    display: block;
+  }
+
+  li ul {
+    width: auto;
+  }
 }
 
 /* Header */
@@ -75,8 +161,10 @@ ul {
   background-color: #0573A3;
 }
 
-li {
+ul img {
+  height: 50px;
   float: left;
+  background-color: #046088;
 }
 
 li a {
@@ -106,12 +194,11 @@ li a:hover {
 li.name a:hover {
   background-color: inherit;
 }
-
 /* Drop Down List */
 
 li ul {
   font-size: 85%;
-  width: auto;
+  width: 100%;
   max-width: 150px;
   display: none;
   position: absolute;
@@ -135,11 +222,6 @@ li ul li a:hover {
   color: white;
   background-color: #4E4E4E;
 }
-
-li.dropdown:hover ul{
-  display: inline;
-}
-
 /* Body */
 
 body {
@@ -148,7 +230,7 @@ body {
 
 /* Images */
 
-img {
+img.banner {
   width: 100%;
   top: 0;
   vertical-align: bottom;
